@@ -1,0 +1,14 @@
+.slidebox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.concard {
+  margin: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
