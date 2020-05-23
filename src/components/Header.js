@@ -29,6 +29,14 @@ export default function LabelBottomNavigation() {
       <Link to="/">
         <img src={logopic} alt="logopic" />
       </Link>
+      <div className="sign">
+        <Link to="/Signin">
+          <input type="button" value="Sign In" />
+        </Link>
+        <Link to="/Signup">
+          <input type="button" value="Sign Up" />
+        </Link>
+      </div>
       <div className="header__menubar">
         <BottomNavigation
           value={value}
