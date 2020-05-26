@@ -28,7 +28,8 @@ const ContopImg = [
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 1300,
+    maxWidth: 1000,
+    margin: "10px",
     flexGrow: 1,
   },
   header: {

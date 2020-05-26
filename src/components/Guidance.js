@@ -19,8 +19,8 @@ const ExpansionPanel = withStyles({
     },
     "&$expanded": {
       margin: "auto",
-      color: "purple",
-      backgroundColor: "rgb(255, 214, 255)",
+      color: "#424242",
+      backgroundColor: "#A9D0F5",
     },
   },
   expanded: {},
@@ -37,13 +37,15 @@ const ExpansionPanelSummary = withStyles({
     },
   },
   content: {
+    width: "70%",
+
     "&$expanded": {
       margin: "12px 0",
     },
   },
   expanded: {
-    backgroundColor: "rgb(207, 90, 207)",
-    color: "pink",
+    backgroundColor: "#086A87",
+    color: "#ffffff",
   },
 })(MuiExpansionPanelSummary);
 

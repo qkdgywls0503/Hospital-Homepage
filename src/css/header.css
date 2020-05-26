@@ -8,58 +8,64 @@
   justify-content: space-between;
 }
 
-.header .header__menubar {
-  width: 500px;
-  height: 6vh;
-
+.header .boxes {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
 .header img {
   width: 20%;
-  margin-left: 715px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   cursor: pointer;
   background: none;
 
   border-radius: 10px;
 }
 
-.header .sign input {
-  width: 80px;
-  height: 30px;
-  font-size: 20px;
-  padding: 3px;
-  font-weight: 700;
-  margin: 10px;
-
-  background: none;
-  border: none;
-
-  background-color: burlywood;
+.header .header__menubar {
+  width: 300px;
+  height: 6vh;
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  cursor: pointer;
+  align-items: center;
 }
 
 .header .sign {
-  width: 100px;
-  height: 40px;
-
-  background: none;
-  border: none;
-
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+}
+
+.header .sign input {
+  width: 110px;
+  font-size: 16px;
+  padding: 6px;
+  margin: 10px;
+  background: none;
+  border: none;
+  background-color: #b2bec3;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #777;
+  cursor: pointer;
+  outline: none;
+}
+
+.header .sign input:hover {
+  width: 110px;
+  font-size: 16px;
+  padding: 6px;
+  margin: 10px;
+  background: none;
+  border: none;
+  background-color: #fff;
+  color: #b2bec3;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #777;
+  cursor: pointer;
 }

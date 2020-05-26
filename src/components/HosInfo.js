@@ -13,11 +13,10 @@ import ghmap from "../ghmap.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: "20px",
     display: "flex",
     width: "100%",
-    height: "100vh",
-    justifyContent: "center",
+    height: "850px",
+    justifyContent: "flex-start",
     alignItems: "center",
     flexDirection: "column",
   },

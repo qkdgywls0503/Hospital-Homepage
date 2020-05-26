@@ -1,17 +1,13 @@
 import React from "react";
-import ConCard from "./ConCard";
+import vtitle from "../vtitle.png";
+import tcont from "../tcont.png";
 
 class TreatInfo extends React.Component {
   render() {
     return (
       <div className="treatcon">
-        <h1>진료안내</h1>
-        <div className="concard">
-          <ConCard />
-          <ConCard />
-          <ConCard />
-          <ConCard />
-        </div>
+        <img src={vtitle} alt="vtitle" />
+        <img src={tcont} alt="tcont" />
       </div>
     );
   }
