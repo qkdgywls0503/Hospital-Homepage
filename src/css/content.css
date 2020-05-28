@@ -3,12 +3,3 @@
   align-items: center;
   justify-content: center;
 }
-
-.concard {
-  margin-top: 20px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}

@@ -2,7 +2,8 @@
 @import "./header.css";
 @import "./content.css";
 @import "./app.css";
-
+@import "./signin.css";
+@import "./signup.css";
 * {
   box-sizing: border-box;
 }
