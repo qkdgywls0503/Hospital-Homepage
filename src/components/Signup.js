@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
 import "../css/styles.css";
 import Button from "@material-ui/core/Button";
 
@@ -20,21 +19,48 @@ class Signup extends React.Component {
     return (
       <div className="signupBox">
         <div className="signupBox__tt">
-          <h1>SIGN UP</h1>
+          <h1
+            style={{
+              color: "#CA8D76",
+              textShadow: "2px 2px 2px #684B40",
+              textDecoration: "overline",
+            }}
+          >
+            SIGN UP
+          </h1>
           <div className="signupBox__txtf">
             <div>
+              <label for="up_name">NAME : </label>
               <input
                 type="text"
+                id="up_name"
                 name="up_name"
+                placeholder="Your name..."
                 value={up_name}
                 onChange={this._handleValueChange}
               />
             </div>
             <div>
-              <input type="text" name="up_id" value={up_id} />
+              <label for="up_id">ID : </label>
+              <input
+                type="text"
+                id="up_id"
+                name="up_id"
+                placeholder="Your id..."
+                value={up_id}
+                onChange={this._handleValueChange}
+              />
             </div>
             <div>
-              <input type="text" name="up_pass" value={up_pass} />
+              <label for="up_pass">PASSWORD : </label>
+              <input
+                type="text"
+                id="up_pass"
+                name="up_pass"
+                placeholder="Your password..."
+                value={up_pass}
+                onChange={this._handleValueChange}
+              />
             </div>
 
             <Button variant="outlined" onClick={() => this._btnClickHandler()}>
@@ -55,7 +81,25 @@ class Signup extends React.Component {
   };
 
   _btnClickHandler = () => {
-    alert(this.state.up_name);
+    if (this.state.up_name == 0) {
+      alert("Name을 입력해주세요");
+    } else if (this.state.up_id == 0) {
+      alert("ID를 입력해주세요");
+    } else if (this.state.up_pass == 0) {
+      alert("Password를 입력해주세요");
+    } else {
+      alert("회원가입 되었습니다.");
+      alert(
+        "name : " +
+          this.state.up_name +
+          " / " +
+          "id : " +
+          this.state.up_id +
+          " / " +
+          "password : " +
+          this.state.up_pass
+      );
+    }
   };
 }
 

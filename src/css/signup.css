@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: flex-start;
 
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .signupBox .signupBox__tt {
@@ -16,7 +16,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: palegoldenrod;
 }
 
 .signupBox .signupBox__tt .signBox__txtf {
@@ -29,7 +28,8 @@
 
 .signupBox .signupBox__tt .signupBox__txtf Button {
   margin-top: 15px;
-  margin-left: 100px;
+  width: 60%;
+  margin-left: 50px;
   background-color: rgb(129, 87, 87);
   color: white;
   border: none;
@@ -37,8 +37,26 @@
 
 .signupBox .signupBox__tt .signupBox__txtf Button:hover {
   margin-top: 15px;
-  margin-left: 100px;
   background-color: rgb(107, 54, 54);
   color: rgb(173, 132, 132);
   border: none;
+}
+
+.signupBox .signupBox__tt .signupBox__txtf input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid darkgray;
+  border-radius: 4px;
+}
+
+.signupBox .signupBox__tt .signupBox__txtf input:focus {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid darkgray;
+  border-radius: 4px;
+  background-color: papayawhip;
 }
