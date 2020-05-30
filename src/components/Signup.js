@@ -90,14 +90,7 @@ class Signup extends React.Component {
     } else {
       alert("회원가입 되었습니다.");
       alert(
-        "name : " +
-          this.state.up_name +
-          " / " +
-          "id : " +
-          this.state.up_id +
-          " / " +
-          "password : " +
-          this.state.up_pass
+        "NAME : " + this.state.up_name + " / " + "ID : " + this.state.up_id
       );
     }
   };

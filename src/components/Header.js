@@ -22,6 +22,9 @@ const useStyles = makeStyles({
 export default function LabelBottomNavigation() {
   const classes = useStyles();
   const [value, setValue] = React.useState("recents");
+  const [isLogin, setIsLogin] = React.useState(
+    sessionStorage.getItem("isLogin")
+  );
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -70,12 +73,16 @@ export default function LabelBottomNavigation() {
           </BottomNavigation>
         </div>
         <div className="sign">
-          <Link to="/Signin">
-            <input type="button" value="Sign In" />
-          </Link>
-          <Link to="/Signup">
-            <input type="button" value="Sign Up" />
-          </Link>
+          {isLogin ? null : (
+            <>
+              <Link to="/Signin">
+                <input type="button" value="Sign In" />
+              </Link>
+              <Link to="/Signup">
+                <input type="button" value="Sign Up" />
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </div>

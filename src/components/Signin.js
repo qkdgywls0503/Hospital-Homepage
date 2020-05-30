@@ -67,16 +67,16 @@ class Signin extends React.Component {
     this.setState(nextState);
   };
 
-  _btnClickHandler = () => {
+  _btnClickHandler = async () => {
     if (this.state.in_id == 0) {
       alert("ID를 입력해주세요");
     } else if (this.state.in_pass == 0) {
       alert("Password를 입력해주세요");
     } else {
       alert("로그인 되었습니다.");
-      alert(
-        "id : " + this.state.in_id + " / " + "password : " + this.state.in_pass
-      );
+
+      await sessionStorage.setItem("isLogin", true);
+      window.location = "/#/";
     }
   };
 }
